@@ -1,0 +1,346 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Farhan Yuda Pahlevi
+% Based on: Sourabh Bajaj's template (https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemPlain}[1]{
+  \item\small{#1}\vspace{-1pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small #1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\newcommand{\resumeProjectItem}[2]{
+  \item\small{
+    \textbf{#1}\par\vspace{-1pt}
+    #2
+  }\vspace{-4pt}
+}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*, itemsep=1pt, topsep=0pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+% ══════════════════════════════════════════
+%  PAGE 1 — heading · summary · skills · experience · education
+% ══════════════════════════════════════════
+
+%----------HEADING-----------------
+\begin{center}
+  {\Large\textbf{Farhan Yuda Pahlevi}}\\[3pt]
+  \small
+  \href{mailto:farhan.y.pahlevi@gmail.com}{farhan.y.pahlevi@gmail.com}
+  $\,\cdot\,$\href{https://pahlevikun.id/}{pahlevikun.id}
+  $\,\cdot\,$\href{https://github.com/pahlevikun}{github.com/pahlevikun}
+  $\,\cdot\,$\href{https://linkedin.com/in/pahlevikun}{linkedin.com/in/pahlevikun}\\[1pt]
+  Bogor, West Java, Indonesia \textnormal{(open to remote arrangement)}
+\end{center}
+\vspace{-6pt}
+
+%-----------SUMMARY-----------------
+\section{Summary}
+\small{
+Senior Software Engineer bridging mobile and backend to ship production-grade, scalable,
+high-performance systems serving millions. 8+ years at GoTo Group owning GoFood Merchant
+authentication and identity, Onboarding Registration, Merchants Payment, and Merchant Data end-to-end ---
+Kotlin Android, Flutter, Go/Ruby/Elixir/Python microservices, cloud-native.
+\textbf{Reduced access-control implementation time by $\sim$40\%} via ABAC framework;
+\textbf{maintained 99.9\%+ availability} through L4--L5 incident command; delivered
+zero-downtime migrations at scale; \textbf{contributed to $>$IDR\,20B/year in revenue growth}.
+Experiencing leadership role and engineering mentor across Indonesia's largest super-app.
+}
+\vspace{-2pt}
+
+%-----------SKILLS-----------------
+\section{Technologies \& Skills}
+  \resumeSubHeadingListStart
+    \item\small{\textbf{Mobile}{: Kotlin $\cdot$ Java $\cdot$ Swift $\cdot$ Dart (Flutter) $\cdot$ KMP $\cdot$ Android SDK $\cdot$ Jetpack}}\vspace{-5pt}
+    \item\small{\textbf{Backend}{: Go $\cdot$ Ruby (and Rails) $\cdot$ Elixir $\cdot$ TypeScript $\cdot$ Python $\cdot$ PHP (Laravel) $\cdot$ Rust (learning)}}\vspace{-5pt}
+    \item\small{\textbf{Databases}{: PostgreSQL $\cdot$ MySQL $\cdot$ Redis $\cdot$ Elasticsearch $\cdot$ SQLite}}\vspace{-5pt}
+    \item\small{\textbf{Infrastructure}{: Kubernetes $\cdot$ Docker $\cdot$ GCP $\cdot$ Tencent Cloud $\cdot$ AWS $\cdot$ New Relic $\cdot$ Grafana $\cdot$ Firebase}}\vspace{-5pt}
+    \item\small{\textbf{Practices}{: ABAC/RBAC $\cdot$ System Design $\cdot$ Zero-downtime deployment $\cdot$ L4--L5 Incident Response $\cdot$ ADR/RFC}}\vspace{-5pt}
+    \item\small{\textbf{Leadership}{: Technical Decisions $\cdot$ Project Time Management $\cdot$ Engineering Mentorship $\cdot$ Domain Anchor and Advisory $\cdot$ Cross-functional Collaboration}}
+
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {GoTo Group}{Jakarta, Indonesia}
+      {Senior Software Engineer, Fullstack (Mobile \& Backend) --- GoFood Merchant, Gojek ODS}{Mar. 2023 -- Present}
+      \resumeItemListStart
+        \resumeItemPlain{\textbf{Cut access-control policy implementation time by $\sim$40\%} by architecting
+          a production ABAC framework (v1 \& v2) across Go, Ruby, Elixir, and TypeScript microservices,
+          replacing legacy RBAC platform-wide.}
+        \resumeItemPlain{Achieved \textbf{99.9\%+ availability} leading zero-downtime cloud-native migration
+          of identity services to Skynet/Tencent; commanded all L4--L5 incidents.}
+        \resumeItemPlain{Improve more than \textbf{20 B IDR} per year revenue for company by implementing new accounting logics.}
+        \resumeItemPlain{Shipped 5+ features in Kotlin, Go \& Elixir for \textbf{millions of merchants}:
+          Login Redesign, Email OTP, 1-tap on Payment Devices, ABAC integration, and User Re-KYC.}
+        \resumeItemPlain{Hardened security via PII Encryption and Virtual Group management across a
+          six-language stack with Elasticsearch \& Redis at scale.}
+      \resumeItemListEnd
+
+    \resumeSubSubheading{Acting Interim Technical Lead --- Merchant Platform, Gojek ODS}{Aug. 2024 -- Jul. 2025}
+      \resumeItemListStart
+        \resumeItemPlain{Delivered \textbf{Special User Roles with zero-downtime deployment} and
+          infrastructure migration as the domain's most senior engineer during critical
+          organisational restructuring.}
+        \resumeItemPlain{Produced RFCs, ADRs, and runbooks adopted as team templates; drove ABAC
+          adoption across 3+ services, sustaining the \textbf{$\sim$40\% implementation-time reduction}.}
+        \resumeItemPlain{Mentored 5+ engineers on brand user management and scope/tag migration,
+          maintaining team velocity through leadership transition.}
+      \resumeItemListEnd
+
+    \resumeSubSubheading{Senior Mobile Engineer --- Merchant Platform, GoTo Holdco}{Jan. 2023 -- Aug. 2024}
+      \resumeItemListStart
+        \resumeItemPlain{Launched GoBiz Login Page Redesign (Email OTP phase 1) for \textbf{millions of
+          merchants}; established the design language adopted across all subsequent auth features.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {GoTo Group}{Greater Jakarta Area, Indonesia}
+      {Senior Android Engineer --- GoMerchants, GoTo Financial}{Jul. 2018 -- Jan. 2023}
+      \resumeItemListStart
+        \resumeItemPlain{Built and scaled GoBiz Android over \textbf{4.5 years} for millions of merchants
+          --- owning auth flows, Login SDK, and the ABAC groundwork later deployed platform-wide.}
+        \resumeItemPlain{Improved performance on high-traffic auth paths via CPU profiling; SDK integrations
+          became the foundation for all subsequent identity features.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {GoTo Group}{Greater Jakarta Area, Indonesia}
+      {Junior Android Developer --- Midtrans}{Jun. 2018 -- Jan. 2019}
+      \resumeItemListStart
+        \resumeItemPlain{Rebuilt Midtrans Android SDK from scratch; \textbf{published GoMerchants AAR},
+          enabling seamless Gojek consumer-app integration across Indonesia's merchant ecosystem.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Universitas Gunadarma}{Depok, West Java, Indonesia}
+      {Bachelor of Engineering -- Informatics Engineering}{2013 -- 2017}
+      \resumeItemListStart
+        \resumeItemPlain{AR hologram Android app as undergraduate thesis; facilitated Google Developer
+          Group programs (Android Kejar, Android Academy), training student cohorts.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Udacity (with Google Scholarship)}{Online}
+      {Nanodegree -- Associate Android Developer}{2017}
+      \resumeItemListStart
+        \resumeItemPlain{Selected as Indonesia scholarship recipient; earned
+          \textbf{Google Certified Associate Android Developer} on completion.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+% ══════════════════════════════════════════
+%  PAGE 2 — projects · honors · mentoring
+% ══════════════════════════════════════════
+\newpage
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    %-- GoTo Group --%
+
+    \resumeProjectItem
+      {ABAC Framework --- Go $\cdot$ Ruby $\cdot$ Elixir --- GoTo Group}
+      {Authorization library v1 \& v2 across 3+ services; cut policy implementation time
+       by $\sim$40\%, replacing legacy RBAC platform-wide.}
+
+    \resumeProjectItem
+      {Gober Project --- Go $\cdot$ Kotlin $\cdot$ Elixir $\cdot$ TypeScript
+       $\cdot$ Protobuf $\cdot$ PostgreSQL $\cdot$ Android --- GoTo Group}
+      {Merchant growth initiative delivered end-to-end; contributed to
+       \textbf{IDR\,20B+/year} in incremental company revenue.}
+
+    \resumeProjectItem
+      {Change User Info w/ FRS --- Kotlin $\cdot$ Go $\cdot$ Elixir
+       $\cdot$ PostgreSQL $\cdot$ Android --- GoTo Group}
+      {Face-recognition-gated identity update flow for phone, email, and KYC data ---
+       reduced fraudulent account-change attempts.}
+
+    \resumeProjectItem
+      {FR Challenge --- Kotlin $\cdot$ Go $\cdot$ Android --- GoTo Group}
+      {Face recognition liveness-challenge for account actions;
+       \textbf{reduced support ticket volume} by blocking fraudulent requests
+       pre-agent-review.}
+
+    \resumeProjectItem
+      {GoTo Hackathon 2024 --- Flutter $\cdot$ Kotlin $\cdot$ Go --- GoTo Group}
+      {\textbf{1st-place} built in 48 h; physical menus $\to$ GoFood menu;
+       \textbf{promoted to production, shipped to millions of users}.}
+
+    \resumeProjectItem
+      {Dangerbot CI Enforcement --- Danger.js $\cdot$ Ruby $\cdot$ GitLab CI
+       $\cdot$ Lark Bot --- GoTo Group}
+      {Automated code-quality gates on every PR: reviewer assignment,
+       missing-test/changelog flags, daily Slack reminders --- reduced review lag.}
+
+    \resumeProjectItem
+      {Centralize Login SDK Integration --- Kotlin $\cdot$ Android $\cdot$ Kong
+       $\cdot$ Go --- GoTo Group}
+      {Integrated Gojek's Login SDK into GoBiz Android, enabling 1-tap login, OTP, and
+       SSO across all Merchant Platform surfaces.}
+
+    %-- External / Freelance --%
+
+    \resumeProjectItem
+      {Hospital System --- Go $\cdot$ HL7 $\cdot$ REST APIs $\cdot$ PostgreSQL
+       --- King Abdul-Aziz University Hospital}
+      {Backend modernization of hospital management \& inventory with HL7-compliant device
+       integrations; zero-downtime migration for 24/7 clinical operations.}
+
+    \resumeProjectItem
+      {KidzBox --- Flutter $\cdot$ Dart --- The KidzBox, Jeddah}
+      {Lead mobile engineer for child daycare \& activities marketplace targeting Saudi
+       Arabia; delivered end-to-end Flutter app in pair-engineering setup.}
+
+    \resumeProjectItem
+      {OneFlux Suite --- Flutter $\cdot$ Dart $\cdot$ Kotlin $\cdot$ Android
+       --- SwiftMind \& TAN Digital}
+      {Delivered 5 cross-platform apps enabling digital transformation of PT Teknologic
+       Aksara Nusantara's clean renewable energy operations.}
+
+    \resumeProjectItem
+      {Case Management --- Flutter $\cdot$ Dart --- PT. Defender Nusa Semesta}
+      {IT security monitoring app with asset dashboards and threat-status graphs for one
+       of Indonesia's largest IT infrastructure solution partners.}
+
+    \resumeProjectItem
+      {Teamboard.jp --- Flutter $\cdot$ Kotlin $\cdot$ Android $\cdot$ iOS
+       --- XYZ GOAT (Freelance)}
+      {Cross-platform keyboard productivity app on Google Play (Japan); improved
+       sales-team conversion UX via Flutter + native Kotlin.}
+
+    %-- Open Source / Personal --%
+
+    \resumeProjectItem
+      {Midtrans Android SDK --- Java $\cdot$ Kotlin $\cdot$ Android
+       --- Midtrans (Open Source)}
+      {Payment SDK open-sourced at github.com/veritrans/veritrans-android;
+       extended as GoMerchants AAR.}
+
+    \resumeProjectItem
+      {seKampus --- Kotlin $\cdot$ Android $\cdot$ Maps SDK
+       --- PT. Deggan Technowave}
+      {Campus-services discovery app connecting Indonesian students with nearby venues;
+       live on Google Play since 2017.}
+
+  \resumeSubHeadingListEnd
+
+%-----------HONORS-----------------
+\section{Honors \& Awards}
+  \resumeSubHeadingListStart
+    \resumeSubItem{1st Place --- GoTo Hackathon 2024}{Jakarta, Indonesia (2024)}
+    \resumeSubItem{1st Place --- DEPICTA (Depok ICT Award)}{Depok, West Java, Indonesia (2016)}
+    \resumeSubItem{1st Place --- KURMA Competition}{Indonesia (2016)}
+  \resumeSubHeadingListEnd
+
+%-----------MENTORING-----------------
+\section{Mentoring}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {STIKI Malang (Praktisi Mengajar / Kampus Merdeka)}{Bogor, Indonesia}
+      {Practitioner Lecturer (Guest Lecturer)}{Jun. 2022 -- Dec. 2022}
+      \resumeItemListStart
+        \resumeItemPlain{Delivered guest lectures sharing industry practices and real-world engineering case studies.}
+        \resumeItemPlain{Developed course materials and hands-on exercises to connect theory to practical application.}
+        \resumeItemPlain{Engaged students through interactive sessions, guided discussions, and applied problem-solving.}
+        \resumeItemPlain{Provided evaluation, feedback, and mentorship to support student growth and career readiness.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Bangkit Academy (Google, Tokopedia, Gojek \& Traveloka)}{Indonesia $\cdot$ Remote}
+      {Instructor $\cdot$ Capstone Mentor $\cdot$ Incubation Team Mentor}{Feb. 2022 -- Dec. 2023}
+      \resumeItemListStart
+        \resumeItemPlain{\textbf{Selected as Incubation Mentor for the top 14 startup teams} --- highest
+          tier of post-programme support; guided Dwicara language-learning app team through to
+          \textbf{Google Play launch}.}
+        \resumeItemPlain{Coached 3+ cohorts in production Android development drawing on real-world
+          Gojek experience to accelerate career readiness.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Yayasan Anak Bangsa Bisa --- GIGIH Program}{Indonesia $\cdot$ Remote}
+      {Mentor Fellowship}{Apr. 2023 -- Dec. 2023}
+      \resumeItemListStart
+        \resumeItemPlain{Mentored GIGIH participants on software engineering careers over 9 months,
+          contributing to Indonesia's pipeline of production-ready engineers.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
