@@ -1,0 +1,111 @@
+\documentclass[10pt]{article}
+\usepackage[top=0.38in, bottom=0.38in, left=0.6in, right=0.6in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+\pdfgentounicode=1
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1pt}
+\setlist[itemize]{leftmargin=*,noitemsep,topsep=0pt}
+
+\begin{document}
+
+{\LARGE \textbf{Farhan Yuda Pahlevi}}
+
+\smallskip
+farhan.y.pahlevi@gmail.com $|$ pahlevikun.id $|$ github.com/pahlevikun $|$ linkedin.com/in/pahlevikun
+
+\section*{Professional Summary}
+Senior Software Engineer with 8+ years building production-grade mobile and backend systems at GoTo Group --- Indonesia's largest super-app --- serving millions of merchants across Southeast Asia. Expert in Kotlin, Flutter, Kotlin Multiplatform (KMP), and polyglot backend engineering (Go, Ruby on Rails, Elixir, Python). Deep proficiency in distributed systems design: Redis caching, Kafka-based event streaming, microservices architecture, ABAC/RBAC identity systems, and zero-downtime cloud migrations. Proven technical lead and L4--L5 incident commander with a track record of reducing implementation time by 40\%, maintaining 99.9\%+ availability, and contributing to IDR 20B+/year in revenue growth. Actively integrates AI tooling and LLM-powered workflows to accelerate engineering velocity and code quality.
+
+\section*{Technical Skills}
+
+\begin{itemize}
+\item \textbf{Mobile}: Kotlin, Java, Android SDK, Jetpack (Compose, ViewModel, LiveData, Room, WorkManager, Navigation), Kotlin Multiplatform (KMP), Android Studio, Coroutines \& Flow, Dart (Flutter), Swift, Material Design 3
+\item \textbf{Backend}: Go, Ruby on Rails, Elixir (Phoenix), TypeScript (Node.js), Python (FastAPI/Django), PHP (Laravel), Rust (learning); REST, gRPC, GraphQL API design
+\item \textbf{System Design \& Architecture}: Distributed Caching (Redis), Message Queues (Kafka, RabbitMQ), Pub/Sub, Microservices, Event-Driven Architecture, CQRS, Rate Limiting, API Gateway, Circuit Breaker, High-Availability Design, Zero-Downtime Deployment
+\item \textbf{Databases}: PostgreSQL, MySQL, Redis (caching, session management, pub/sub), Elasticsearch, SQLite; query optimisation, indexing strategy, large-scale schema migration
+\item \textbf{Infrastructure \& DevOps}: Kubernetes, Docker, GCP, AWS, Tencent Cloud (Skynet), New Relic, Grafana, Firebase, CI/CD pipelines
+\item \textbf{AI \& Optimisation}: LLM integration (OpenAI, Anthropic APIs), GenAI-powered feature development, Prompt Engineering, AI-assisted SDLC, AI workflow optimisation, GitHub Copilot
+\item \textbf{Security \& Identity}: ABAC/RBAC, PII Encryption, OAuth 2.0, OTP/MFA, Identity \& Access Management (IAM), OIDC, JWT, Virtual Group management
+\item \textbf{Engineering Practices}: System Design, ADR/RFC authoring, L4--L5 Incident Command, TDD, Performance Profiling (CPU/memory), Code Review, Observability
+\item \textbf{Leadership}: Technical Decision-Making, Engineering Mentorship, Cross-functional Collaboration, Domain Anchor \& Advisory, Project Planning \& Delivery
+\end{itemize}
+
+\section*{Work Experience}
+
+\textbf{Senior Software Engineer, Fullstack (Mobile \& Backend) --- GoFood Merchant | Gojek ODS, GoTo Group | Jakarta, Indonesia}\\
+\textit{Mar. 2023 -- Present}
+\begin{itemize}
+\item Architected and shipped production ABAC authorization framework (v1 \& v2) across 6+ Go, Ruby on Rails, Elixir, and TypeScript microservices --- slashing policy implementation time by 40\%, eliminating legacy RBAC debt platform-wide, and enabling fine-grained access control for millions of merchant identities.
+\item Sustained 99.9\%+ availability across merchant identity services by commanding the zero-downtime cloud-native migration to Skynet/Tencent Cloud and leading all L4--L5 incident responses --- authoring structured runbooks that reduced mean time to resolution (MTTR) for critical production incidents.
+\item Engineered merchant payment accounting and transaction reconciliation logic across Elixir and Go microservices, directly unlocking IDR 20B+/year in incremental annual revenue for the GoFood merchant ecosystem.
+\item Delivered 5+ high-impact production features end-to-end across Kotlin Android, Go, and Elixir for millions of GoFood merchants: Login Redesign, Email OTP, 1-tap Payment Device auth, ABAC integration, and User Re-KYC --- each rolled out with zero-downtime deployment strategies.
+\item Engineered distributed Redis cache-aside layer across Go, Ruby on Rails, and Elixir authentication services, intercepting high-frequency identity resolution queries for millions of concurrent merchant sessions and significantly reducing PostgreSQL read throughput and p99 latency on critical auth paths.
+\item Hardened platform data privacy and security across a six-language polyglot stack by implementing PII field-level encryption and Virtual Group access management, underpinned by Redis and Elasticsearch at GoFood merchant scale.
+\item Pioneered AI-assisted engineering adoption across the squad --- deploying GitHub Copilot, LLM-powered code review automation, and prompt-engineered test scaffolding --- accelerating feature delivery cadence, cutting boilerplate authoring time, and raising first-pass pull request quality.
+\end{itemize}
+
+\smallskip
+\textbf{Acting Interim Technical Lead --- Merchant Platform | Gojek ODS, GoTo Group | Jakarta, Indonesia}\\
+\textit{Aug. 2024 -- Jul. 2025}
+\begin{itemize}
+\item Assumed full technical ownership of the Merchant Platform domain during critical organisational restructuring, delivering the Special User Roles system --- including access model redesign, zero-downtime rollout, and full cloud infrastructure migration --- without service disruption.
+\item Authored 10+ RFCs, ADRs, and incident runbooks adopted as team-wide engineering standards; drove ABAC framework extension across 3+ downstream services, sustaining the 40\% policy-implementation-time improvement at scale.
+\item Coached and mentored 5+ engineers across brand user management, scope/tag migration, distributed system design, and Redis caching patterns --- preserving full delivery velocity through an extended leadership transition.
+\item Elevated team engineering standards through structured code review frameworks, blameless incident postmortems, and weekly knowledge-sharing sessions on distributed observability (New Relic, Grafana) and AI-assisted development workflows.
+\end{itemize}
+
+\smallskip
+\textbf{Senior Mobile Engineer --- Merchant Platform | GoTo Holdco, GoTo Group | Jakarta, Indonesia}\\
+\textit{Jan. 2023 -- Aug. 2024}
+\begin{itemize}
+\item Spearheaded GoBiz Login Page Redesign and Email OTP Phase 1 in Kotlin with Jetpack Compose, rolling out to millions of GoFood merchants and establishing the authentication UI system later standardised across all subsequent login and identity features.
+\item Designed and delivered Kotlin Multiplatform (KMP) shared library encapsulating authentication flows, session management, and merchant onboarding business logic --- establishing a single shared codebase consumed by both Android and iOS teams, eliminating duplicate implementations and accelerating cross-platform feature rollouts. Led parallel Flutter proof-of-concept to produce an architecture evaluation framework (code-sharing ratio, runtime performance, adoption cost) that guided the mobile guild's long-term cross-platform strategy.
+\end{itemize}
+
+\smallskip
+\textbf{Senior Android Engineer --- GoMerchants | GoTo Financial, GoTo Group | Greater Jakarta Area, Indonesia}\\
+\textit{Jul. 2018 -- Jan. 2023}
+\begin{itemize}
+\item Architected and scaled GoBiz Android over 4.5 years in Kotlin and Java, serving millions of GoTo merchants end-to-end --- owning authentication flows, Login SDK, onboarding registration, payment integration, and the identity ABAC groundwork later promoted platform-wide across GoTo Group.
+\item Identified and eliminated authentication performance bottlenecks through systematic CPU profiling and Kotlin Coroutines-based async refactoring, establishing a performance-optimised SDK baseline that became the architectural foundation for all GoTo identity and merchant payment features.
+\item Designed and published a modular Kotlin Login SDK using Jetpack (MVVM, Navigation, Clean Architecture), adopted across 3+ GoTo apps to enable cross-product SSO --- reducing new-app authentication integration effort from weeks to days.
+\item Led cross-functional system design reviews for Go and Ruby on Rails microservices --- defining Redis cache eviction policies, Elasticsearch multi-tenant index design, and API rate-limiting strategies --- while driving Android architecture decisions (MVVM, Clean Architecture, modular Gradle) and enforcing code quality standards via CI/CD that scaled merchant identity and search to millions of active GoMerchants users.
+\end{itemize}
+
+\smallskip
+\textbf{Junior Android Developer --- Midtrans | GoTo Group | Greater Jakarta Area, Indonesia}\\
+\textit{Jun. 2018 -- Jan. 2019}
+\begin{itemize}
+\item Rebuilt Midtrans Android payment SDK from scratch in Java and Kotlin; engineered and published the GoMerchants AAR library that became the integration bridge between Gojek's consumer app and Indonesia's largest merchant payment processing platform.
+\end{itemize}
+
+\section*{Education}
+
+\textbf{Bachelor of Engineering -- Informatics Engineering | Universitas Gunadarma | Depok, West Java, Indonesia}\\
+\textit{2013 -- 2017}
+\begin{itemize}
+\item Undergraduate thesis: AR hologram Android application using computer vision and marker tracking.
+\item Facilitated Google Developer Group programs (Android Kejar, Android Academy), training student cohorts in mobile and Android development.
+\end{itemize}
+
+\smallskip
+\textbf{Nanodegree -- Associate Android Developer | Udacity (with Google Scholarship) | Online}\\
+\textit{2017}
+\begin{itemize}
+\item Selected as Indonesia scholarship recipient; earned Google Certified Associate Android Developer upon completion.
+\end{itemize}
+
+\section*{Certifications \& Recognition}
+\begin{itemize}
+\item \textbf{Google Certified Associate Android Developer} --- Udacity / Google Scholarship (2017)
+\item \textbf{L4--L5 Incident Commander}, GoTo Group --- led critical production incident response for identity, authentication, and merchant payment services
+\end{itemize}
+
+\end{document}
